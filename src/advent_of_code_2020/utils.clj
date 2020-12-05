@@ -6,3 +6,6 @@
 
 (defn read-input-list-of-ints [f]
   (->> f read-input-list (map #(Long/parseLong %))))
+
+(defn read-input-list-of-chars [f]
+  (->> f read-input-list (map vec)))
